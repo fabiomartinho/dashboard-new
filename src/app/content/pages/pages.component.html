@@ -1,0 +1,101 @@
+<div class="dashboard-backdrop-container">
+    <div class="dashboard-backdrop">
+        
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container d-flex">
+      <div class="site-header-left">
+        <a href=""><span class="logo" style="background-image: url('./assets/logo-rejaxpay.png');"></span></a>
+        <nav class="site-menu">
+          <ul>
+            <li>
+              <button mat-button [matMenuTriggerFor]="cadastro">Grupos</button>
+              <mat-menu #cadastro="matMenu">
+                <button mat-menu-item>Item</button>
+                <button mat-menu-item>Item</button>
+              </mat-menu>
+            </li>
+            <li>
+              <button mat-button [matMenuTriggerFor]="opDiaria">Contas</button>
+              <mat-menu #opDiaria="matMenu">
+                <button mat-menu-item>Cadastros pendentes</button>
+                <button mat-menu-item>Todos</button>
+                <button mat-menu-item>Permissões</button>
+              </mat-menu>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="site-header-right">
+        <button class="notifications-bt pulseAnim" mat-icon-button [matMenuTriggerFor]="notifications" aria-label="Example icon-button with a menu">
+          <mat-icon>notifications</mat-icon>
+        </button>
+        <mat-menu #notifications="matMenu">
+          <button mat-menu-item>
+            <mat-icon>dialpad</mat-icon>
+            <span>Redial</span>
+          </button>
+          <button mat-menu-item disabled>
+            <mat-icon>voicemail</mat-icon>
+            <span>Check voice mail</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>notifications_off</mat-icon>
+            <span>Disable alerts</span>
+          </button>
+        </mat-menu>
+      </div>
+    </div>
+  </header>
+  <div class="subheader grid-item">
+    <div class="container">
+      <div class="subheader-main">
+        <h3 class="subheader-title">Dashboard</h3>
+        <div class="subheader-breadcrumbs">
+          <a href="#" class="subheader-breadcrumbs-home"><mat-icon>home</mat-icon></a>
+          <span class="subheader-breadcrumbs-separator"></span>
+          <a href="" class="subheader-breadcrumbs-link">
+            Dashboard
+          </a>
+          <span class="subheader-breadcrumbs-separator"></span>
+          <a href="" class="subheader-breadcrumbs-link">
+            Default Dashboard
+          </a>
+        </div>
+      </div>
+      <div class="subheader-toolbar">
+        <div class="subheader-wrapper">
+          <a href="#" class="btn subheader-btn-secondary">
+            Reports
+          </a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="portlet">
+          <header class="portlet-header">
+            <div class="portlet-head-label">
+              <h3 class="portlet-head-title">
+                Exclusive Datatable Plugin
+              </h3>
+            </div>
+            <div class="portlet-head-toolbar">
+                <button class="notifications-bt pulseAnim" mat-icon-button [matMenuTriggerFor]="notifications" aria-label="Example icon-button with a menu">
+                  <mat-icon>more_horiz</mat-icon>
+                </button>          
+            </div>
+          </header>
+          <div class="portlet-body">
+            oi2
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

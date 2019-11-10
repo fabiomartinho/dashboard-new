@@ -11,6 +11,7 @@
 html body {
     font-size: 12px;
     font-family: 'Poppins', sans-serif;
+    color: #646c9a;
 }
 .dashboard-backdrop-container {
     position: relative;
@@ -46,15 +47,8 @@ html body {
     background-position: center;
     background-repeat: no-repeat;
 }
-.site-menu {
-    display: flex;
-    color: white;
-}
-.site-menu ul {
-    display: flex;
-    list-style: none;
-    margin-bottom: 0;
-}
+
+
 .pulseAnim {
     display: block;
     padding: 0px;
@@ -145,4 +139,16 @@ html body {
 .subheader .subheader-main .subheader-breadcrumbs .subheader-breadcrumbs-home>mat-icon {
     color: rgba(255,255,255,.6);
     margin-top: 5px;
+}
+
+/***************************************************
+    FORM
+***************************************************/
+
+input.form-control
+{
+    font-size: 13px;
+    font-weight: 300;
+    border: 1px solid #e2e5ec;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
 }
